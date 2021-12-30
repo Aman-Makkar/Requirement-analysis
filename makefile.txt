@@ -1,0 +1,70 @@
+output: main.o badinput.o curriculum.o departmentstructure.o dividezero.o docopen.o it_support.o job.o machine.o mainclass.o request.o researcher.o scheduler.o setoffunctions.o student.o unknowtypejob.o user.o
+
+	g++ main.o badinput.o curriculum.o departmentstructure.o dividezero.o docopen.o it_support.o job.o machine.o mainclass.o request.o researcher.o scheduler.o setoffunctions.o student.o unknowtypejob.o user.o -o output
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+badinput.o: badinput.cpp badinput.h
+	g++ -c badinput.cpp
+
+curriculum.o: curriculum.cpp curriculum.h
+	g++ -c curriculum.cpp
+
+departmentstructure.o: departmentstructure.cpp departmentstructure.h
+	g++ -c departmentstructure.cpp
+
+dividezero.o: dividezero.cpp dividezero.h
+	g++ -c dividezero.cpp
+
+docopen.o: docopen.cpp docopen.h
+	g++ -c docopen.cpp
+
+it_support.o: it_support.cpp it_support.h
+	g++ -c it_support.cpp
+
+job.o: job.cpp job.h
+	g++ -c job.cpp
+
+machine.o: machine.cpp machine.h
+	g++ -c machine.cpp
+
+mainclass.o: mainclass.cpp mainclass.h
+	g++ -c mainclass.cpp
+
+request.o: request.cpp request.h
+	g++ -c request.cpp
+
+researcher.o: researcher.cpp researcher.h
+	g++ -c researcher.cpp
+
+scheduler.o: scheduler.cpp scheduler.h
+	g++ -c scheduler.cpp
+
+setoffunctions.o: setoffunctions.cpp setoffunctions.h
+	g++ -c setoffunctions.cpp
+
+student.o: student.cpp student.h
+	g++ -c student.cpp
+
+unknowtypejob.o: unknowtypejob.cpp unknowtypejob.h
+	g++ -c unknowtypejob.cpp
+
+user.o: user.cpp user.h
+	g++ -c user.cpp
+
+clean:
+	rm *.o output
+
+
+
+
+
+
+
+
+
+
+
+
+
